@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="require.js"></script>
+        <script type="text/javascript">
+		    // 本地加载方式1
+            require(["moduleA"]);
+			
+			// 本地加载方式2
+			require(["moduleB"],function(mb){
+			    alert(mb.add(1, 1));
+			})
+        </script>
+    </head>
+    <body>
+      <span>body</span>
+    </body>
+</html>
